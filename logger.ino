@@ -26,8 +26,17 @@
  * 
  */
 
+ /*
+  * TODO: 
+  * 
+  * * servo release at specified altitude 
+  * * better data logging (make sure it works) 
+  * * gps stuff? 
+  * * wifi downlink 
+  * 
+  */
+
 File logfile;
-const int chipSelect = 10;
 TinyGPS gps;
 SoftwareSerial ss(3, 2);
 DHT dht(DHTPIN, DHTTYPE);
@@ -35,6 +44,7 @@ DHT dht(DHTPIN, DHTTYPE);
 const int xPin = 0;
 const int yPin = 1;
 const int zPin = 2;
+const int chipSelect = 10;
 
 int minVal = 265;
 int maxVal = 402;
